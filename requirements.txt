@@ -1,0 +1,5 @@
+torch
+Flask
+torchvision
+opencv-python
+gunicorn
