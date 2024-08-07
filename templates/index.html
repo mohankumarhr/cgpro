@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        /* .section1{
+            padding-top: 50px;
+            background-color: #EEEEEE;
+        } */
+        .section2{
+            /* background-color: #686D76; */
+            background-color: #EEEEEE;
+        }
+
+        /* .section3{
+            background-color: #EEEEEE;
+        } */
+
+        .logo-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .logo-container img{
+            width: 150px;
+            padding-bottom: 20px;
+        }
+        .bold-text{
+            font-weight: bold;
+        }
+        .color-bold{
+            color: #948A54;
+            font-weight: bold;
+        }
+        .project-container{
+            margin-top: 50PX;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .project-container h3{
+            font-size: 25px;
+        }
+        .project-container p{
+            font-weight: bold;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .project-container h1{
+            color: #5A72A0;
+        }
+        .project-container a{
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #5A72A0;
+            border-radius: 10px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+        }
+        .project-container a:hover{
+            transform: scale(1.05);
+        }
+        td{
+            text-align: justify;
+        }
+        .guid-details{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 20px;
+            padding-bottom: 70px;
+        }
+        .guid-name{
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .about-project{
+            padding: 50px 150px;
+            font-size: 20px;
+            text-align: justify;
+            /* color: white; */
+        }
+        .about-project p{
+            line-height: 1.5;
+        }
+        .about-project h3{
+            margin-bottom: 25px;
+            font-size: 35px;
+            /* color: white; */
+        }
+        .footer{
+            background-color: #EEEEEE;
+            text-align: center;
+            padding: 20px;
+        }
+
+ 
+
+.responsive-cell-block {
+  min-height: 75px;
+}
+
+.text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 25px;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: space-evenly;
+}
+
+.team-head-text {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.team-head-text {
+  line-height: 50px;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+
+.container {
+  max-width: 1380px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+}
+
+.card {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+}
+
+.card-container {
+  width: 280px;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+.name {
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.position {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+.feature-text {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  color: rgb(122, 122, 122);
+  line-height: 30px;
+}
+
+.social-icons {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-image-wrapper {
+  clip-path: circle(50% at 50% 50%);
+  width: 130px;
+  height: 130px;
+}
+
+.team-member-image {
+  max-width: 100%;
+}
+
+@media (max-width: 500px) {
+  .card-container {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+  }
+}
+    </style>
+
+</head>
+<body>
+    <div class="section1">
+        <div class="logo-container">
+            <img src="../static/image/logo.png" alt="logo">
+            <h2>SAPTHAGIRI COLLEGE OF ENGINEERING</h2>
+            <p  class="bold-text">(Affiliated to Visvesvaraya Technological University, Belagavi& Approved by AICTE, New Delhi.)         </p>
+            <p>(Accredited by NAAC with ‘A’ Grade) (ISO 9001-2015 & 14001-2015 Certified) #14/5, Chikkasandra, Hesaraghatta Main Road, Bengaluru– 560 057        </p>
+            <p class="color-bold">Department of Computer Science and Engineering        </p>
+            <p class="bold-text">Accredited by NBA        </p>
+        </div>
+        <div class="project-container">
+            <h3>PROJECT ON COMPUTER GRAPHICS AND IMAGE PROCESSING</h3>
+            <P>SUBJECT CODE: 21CSL66</P>
+            <h1>FRUIT FRESHNESS DETECTION</h1>
+            <a href="/home">Click Here</a>
+        </div>
+        <div class="team-container">
+           <div class="guid-details">
+                <p>GUIDE</p>
+                <p class="guid-name">PROF. SHEELA RANI CM <br>
+                    Assistant Professor <br>
+                    Dept of CS&E
+                    </p>
+           </div>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="about-project">
+            <h3>Abstract</h3>
+            <p>This project harnesses the capabilities of OpenCV to predict the freshness of fruits based on their visual attributes. By employing advanced image processing techniques, the system analyzes key features such as color, texture, and shape to determine the freshness level of various fruits. Utilizing a trained machine learning model, the project can classify the fruits into different freshness categories with high accuracy. This application demonstrates the practical use of computer vision in the food industry, providing a valuable tool for quality control and inventory management. The integration of OpenCV with machine learning algorithms highlights the potential for innovative solutions in ensuring food safety and reducing waste.
+            </p>
+        </div>
+    </div>
+        
+    
+    
+    <div class="our-team">
+
+    <div class="section3">
+
+        <div class="responsive-container-block container">
+            <p class="text-blk team-head-text">
+              Our Team
+            </p>
+            <div class="responsive-container-block">
+              <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                  <div class="team-image-wrapper">
+                    <img class="team-member-image" src="../static/image/mohan.jpg">
+                  </div>
+                  <p class="text-blk name">
+                    MohanKumar HR
+                  </p>
+                  <p class="text-blk position">
+                    1SG21CS052
+                  </p>
+                  <p class="text-blk feature-text">
+                    +91 9353931337 <br>
+                    mohankumarhr2003@gmail.com
+                  </p>
+                  
+                </div>
+              </div>
+              <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                  <div class="team-image-wrapper">
+                    <img class="team-member-image" src="../static/image/nagabhushan.jpg">
+                  </div>
+                  <p class="text-blk name">
+                    Nagabhushan B
+                  </p>
+                  <p class="text-blk position">
+                    1SG21CS056
+                  </p>
+                  <p class="text-blk feature-text">
+                    +91 7338060519 <br>
+                    nagabhushanb08@gmail.com
+                  </p>
+                  
+                </div>
+              </div>
+              <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                  <div class="team-image-wrapper">
+                    <img class="team-member-image" src="../static/image/sandesh.jpg">
+                  </div>
+                  <p class="text-blk name">
+                    Sandesh GC
+                  </p>
+                  <p class="text-blk position">
+                    1SG21CS084
+                  </p>
+                  <p class="text-blk feature-text">
+                    +91 935862741 <br>
+                    sandeshgc2003@gmail.com
+                  </p>
+                  
+                </div>
+              </div>
+              <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                  <div class="team-image-wrapper">
+                    <img class="team-member-image" src="../static//image/praveen.jpg">
+                  </div>
+                  <p class="text-blk name">
+                    Praveen J
+                  </p>
+                  <p class="text-blk position">
+                    1SG21CS066
+                  </p>
+                  <p class="text-blk feature-text">
+                    +91 897022000 <br>
+                    praveenjsappa@gmail.com
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; mohankumarhr2003@gmail.com
+</div>
+</body>
+</html>
+
+
