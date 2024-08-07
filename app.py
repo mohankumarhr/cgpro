@@ -12,6 +12,8 @@ ML_MODEL = None
 ML_MODEL_FILE = "model.pt"
 TORCH_DEVICE = "cpu"
 
+
+
 def get_model():
     
     global ML_MODEL
@@ -100,3 +102,7 @@ def prediction_page():
         freshness_label=freshness_label(freshness_percentage),
         base64_image=base64_image,
     )
+
+if __name__ == '__main__':
+
+    app.run(debug=False, host="0.0.0.0")
