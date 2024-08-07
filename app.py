@@ -103,6 +103,5 @@ def prediction_page():
         base64_image=base64_image,
     )
 
-if __name__ == '__main__':
-
-    app.run(debug=False, host="0.0.0.0")
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
